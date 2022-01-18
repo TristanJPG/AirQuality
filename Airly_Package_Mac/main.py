@@ -12,7 +12,7 @@ driver.get("https://airly.org/map/en/#33.89255,-84.835544,i90171")
 
 button = driver.find_element_by_css_selector("div .sc-pFZIQ")
 button.click()
-time.sleep(15)
+time.sleep(12)
 AQ1 = driver.find_elements_by_css_selector("div .sc-licaXj")
 particles = driver.find_elements_by_css_selector("div .sc-dwqbIM")
 
