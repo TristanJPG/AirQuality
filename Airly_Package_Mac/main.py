@@ -6,13 +6,13 @@ import getpass
 import os
 username = getpass.getuser()
 cwd = os.getcwd()
-chrome_driver = f"/Users/{username}/Desktop/Airly_Package/ChromeDriver/chromedriver"
+chrome_driver = f"/Users/{username}/Desktop/Airly_Package_Mac/ChromeDriver/chromedriver"
 driver = webdriver.Chrome(executable_path=chrome_driver)
 driver.get("https://airly.org/map/en/#33.89255,-84.835544,i90171")
 
 button = driver.find_element_by_css_selector("div .sc-pFZIQ")
 button.click()
-time.sleep(12)
+time.sleep(15)
 AQ1 = driver.find_elements_by_css_selector("div .sc-licaXj")
 particles = driver.find_elements_by_css_selector("div .sc-dwqbIM")
 
