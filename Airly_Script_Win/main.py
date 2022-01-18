@@ -35,7 +35,6 @@ def data():
     pm10 = AQ[0]
     pm25 = AQ[1]
     pm1 = AQ[2]
-time.sleep(25)
 
 data()
 if data == None:
